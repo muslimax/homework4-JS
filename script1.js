@@ -7,49 +7,54 @@
                 Ваш ответ не верный - 2! Правильный ответ - 3! */
 
 var a = +prompt('Введите количество примеров');
-
-
-
+function num1() {
+    var b = Math.floor(Math.random() * 12 + 1); 
+    return b;
+  }
+function num2() {
+   var c = Math.floor(Math.random() * 9 + 1);
+    return c;
+  }
+  
   
 for (let i = 0; i < a; i++) {
 
  var s = Math.floor(Math.random() * 4 + 1);
-  var  b = Math.floor(Math.random() * 12 + 1); 
-   var c = Math.floor(Math.random() * 9 + 1);
+
     if (s == 1) {
-        var m = +prompt(b + "*" + c);
-        if (m == (b * c)) {
+        var m = +prompt(num1() + "*" + num2());
+        if (m == (num1() * num2())) {
             console.log("Ваш ответ верный - " + m);
         }
         else {
-            console.log("Ваш ответ неверный - " + m + ". Правильный ответ - " + (b * c));
+            console.log("Ваш ответ неверный - " + m + ". Правильный ответ - " + (num1() * num2()));
         }
     }
     else if (s == 2) {
-        var c = +prompt(b + "/" + c);
-        if (c == (b / c)) {
-            console.log("Ваш ответ верный - " + c);
+        var l = +prompt(num1() + "/" + num2());
+        if (l == (num1() / num2())) {
+            console.log("Ваш ответ верный - " + l);
         }
         else {
-            console.log("Ваш ответ неверный - " + c + ". Правильный ответ - " + (b/c));
+            console.log("Ваш ответ неверный - " + l + ". Правильный ответ - " + (num1()/num2()));
         }
     }
     else if (s == 3) {
-        var d = +prompt(b + "+" + c);
-        if (d == (b + c)) {
+        var d = +prompt(num1() + "+" + num2());
+        if (d == (num1() + num2())) {
             console.log("Ваш ответ верный - " + d);
         }
         else {
-        console.log("Ваш ответ неверный - "  + d +". Правильный ответ - " + (b +c));
+        console.log("Ваш ответ неверный - "  + d +". Правильный ответ - " + (num1() +num2()));
         }
     }
     else if (s == 4) {
-        var e = +prompt(b + "-" + c);
-        if (e == (b - c)) {
+        var e = +prompt(num1() + "-" + num2());
+        if (e == (num1() - num2())) {
             console.log("Ваш ответ верный - " + e );
         }
         else {
-        console.log("Ваш ответ неверный - "  + e +". Правильный ответ - " + (b-c));
+        console.log("Ваш ответ неверный - "  + e +". Правильный ответ - " + (num1()-num2()));
         }
     }
 

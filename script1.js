@@ -20,41 +20,43 @@ function num2() {
 for (let i = 0; i < a; i++) {
 
  var s = Math.floor(Math.random() * 4 + 1);
+  var ch1 = num1();
+  var ch2 = num2()
 
     if (s == 1) {
-        var m = +prompt(num1() + "*" + num2());
-        if (m == (num1() * num2())) {
+        var m = +prompt(ch1 + "*" + ch2);
+        if (m == (ch1 * ch2)) {
             console.log("Ваш ответ верный - " + m);
         }
         else {
-            console.log("Ваш ответ неверный - " + m + ". Правильный ответ - " + (num1() * num2()));
+            console.log("Ваш ответ неверный - " + m + ". Правильный ответ - " + (ch1 * ch2));
         }
     }
     else if (s == 2) {
-        var l = +prompt(num1() + "/" + num2());
-        if (l == (num1() / num2())) {
+        var l = +prompt(ch1 + "/" + ch2);
+        if (l == (ch1 / ch2)) {
             console.log("Ваш ответ верный - " + l);
         }
         else {
-            console.log("Ваш ответ неверный - " + l + ". Правильный ответ - " + (num1()/num2()));
+            console.log("Ваш ответ неверный - " + l + ". Правильный ответ - " + (ch1/ch2));
         }
     }
     else if (s == 3) {
-        var d = +prompt(num1() + "+" + num2());
-        if (d == (num1() + num2())) {
+        var d = +prompt(ch1 + "+" + ch2);
+        if (d == (ch1 + ch2)) {
             console.log("Ваш ответ верный - " + d);
         }
         else {
-        console.log("Ваш ответ неверный - "  + d +". Правильный ответ - " + (num1() +num2()));
+        console.log("Ваш ответ неверный - "  + d +". Правильный ответ - " + (ch1 +ch2));
         }
     }
     else if (s == 4) {
-        var e = +prompt(num1() + "-" + num2());
-        if (e == (num1() - num2())) {
+        var e = +prompt(ch1 + "-" + ch2);
+        if (e == (ch1 - ch2)) {
             console.log("Ваш ответ верный - " + e );
         }
         else {
-        console.log("Ваш ответ неверный - "  + e +". Правильный ответ - " + (num1()-num2()));
+        console.log("Ваш ответ неверный - "  + e +". Правильный ответ - " + (ch1-ch2));
         }
     }
 
